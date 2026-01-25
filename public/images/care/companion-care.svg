@@ -1,0 +1,33 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="200" rx="12" fill="#E8F4F1"/>
+
+  <!-- Two people sitting together -->
+  <!-- Person 1 (Senior) -->
+  <circle cx="110" cy="80" r="28" fill="#E9C46A"/>
+  <ellipse cx="110" cy="150" rx="35" ry="45" fill="#264653"/>
+  <circle cx="100" cy="78" r="3" fill="#1A1D24"/>
+  <circle cx="120" cy="78" r="3" fill="#1A1D24"/>
+  <path d="M105 92 Q110 98 115 92" stroke="#1A1D24" stroke-width="2" fill="none"/>
+
+  <!-- Person 2 (Caregiver) -->
+  <circle cx="190" cy="80" r="28" fill="#2A9D8F"/>
+  <ellipse cx="190" cy="150" rx="35" ry="45" fill="#2A9D8F"/>
+  <circle cx="180" cy="78" r="3" fill="#FFFFFF"/>
+  <circle cx="200" cy="78" r="3" fill="#FFFFFF"/>
+  <path d="M185 92 Q190 98 195 92" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+
+  <!-- Coffee cups -->
+  <rect x="70" y="120" width="20" height="25" rx="3" fill="#FFFFFF"/>
+  <ellipse cx="80" cy="120" rx="12" ry="4" fill="#D4763A"/>
+
+  <rect x="210" y="120" width="20" height="25" rx="3" fill="#FFFFFF"/>
+  <ellipse cx="220" cy="120" rx="12" ry="4" fill="#D4763A"/>
+
+  <!-- Heart between them -->
+  <path d="M150 100 C150 90 140 85 135 92 C130 85 120 90 120 100 C120 115 135 125 135 125 C135 125 150 115 150 100Z" fill="#F4A261" transform="scale(0.6) translate(100 -20)"/>
+
+  <!-- Speech bubbles -->
+  <ellipse cx="140" cy="50" rx="25" ry="15" fill="#FFFFFF"/>
+  <ellipse cx="165" cy="55" rx="20" ry="12" fill="#FFFFFF"/>
+</svg>

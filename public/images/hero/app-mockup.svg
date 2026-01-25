@@ -1,0 +1,43 @@
+<svg width="280" height="500" viewBox="0 0 280 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Phone frame -->
+  <rect x="10" y="10" width="260" height="480" rx="30" fill="#1A1D24"/>
+  <rect x="20" y="25" width="240" height="450" rx="20" fill="#FFFFFF"/>
+
+  <!-- Status bar -->
+  <rect x="30" y="35" width="220" height="25" fill="#F8F9FA"/>
+  <text x="40" y="52" font-family="system-ui" font-size="12" fill="#5a5d63">9:41</text>
+  <circle cx="220" cy="47" r="8" fill="#2A9D8F"/>
+
+  <!-- App header -->
+  <rect x="30" y="65" width="220" height="50" fill="#2A9D8F"/>
+  <text x="50" y="95" font-family="system-ui" font-size="16" font-weight="bold" fill="white">SimpliCares</text>
+
+  <!-- Today's visits card -->
+  <rect x="35" y="125" width="210" height="80" rx="10" fill="#F8F9FA"/>
+  <text x="50" y="150" font-family="system-ui" font-size="14" font-weight="bold" fill="#1A1D24">Today's Visits</text>
+  <text x="50" y="175" font-family="system-ui" font-size="24" font-weight="bold" fill="#2A9D8F">4</text>
+  <text x="75" y="175" font-family="system-ui" font-size="12" fill="#5a5d63">appointments</text>
+
+  <!-- Visit item 1 -->
+  <rect x="35" y="215" width="210" height="70" rx="10" fill="#E8F4F1"/>
+  <circle cx="60" cy="250" r="18" fill="#2A9D8F"/>
+  <text x="55" y="255" font-family="system-ui" font-size="12" fill="white">MJ</text>
+  <text x="90" y="240" font-family="system-ui" font-size="14" font-weight="bold" fill="#1A1D24">Mary Johnson</text>
+  <text x="90" y="258" font-family="system-ui" font-size="11" fill="#5a5d63">9:00 AM - 11:00 AM</text>
+  <rect x="90" y="265" width="60" height="15" rx="7" fill="#2A9D8F"/>
+  <text x="100" y="276" font-family="system-ui" font-size="9" fill="white">Check In</text>
+
+  <!-- Visit item 2 -->
+  <rect x="35" y="295" width="210" height="70" rx="10" fill="#FFFFFF" stroke="#E5E2DC"/>
+  <circle cx="60" cy="330" r="18" fill="#5a5d63"/>
+  <text x="55" y="335" font-family="system-ui" font-size="12" fill="white">RB</text>
+  <text x="90" y="320" font-family="system-ui" font-size="14" font-weight="bold" fill="#1A1D24">Robert Brown</text>
+  <text x="90" y="338" font-family="system-ui" font-size="11" fill="#5a5d63">1:00 PM - 3:00 PM</text>
+  <text x="90" y="356" font-family="system-ui" font-size="10" fill="#5a5d63">Upcoming</text>
+
+  <!-- Bottom navigation -->
+  <rect x="30" y="420" width="220" height="50" fill="#F8F9FA"/>
+  <circle cx="70" cy="445" r="15" fill="#2A9D8F"/>
+  <rect x="125" y="438" width="30" height="14" rx="3" fill="#E5E2DC"/>
+  <rect x="185" y="438" width="30" height="14" rx="3" fill="#E5E2DC"/>
+</svg>

@@ -1,0 +1,37 @@
+<svg width="500" height="400" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="250" cy="200" r="180" fill="#E8F4F1"/>
+
+  <!-- Caregiver figure -->
+  <circle cx="200" cy="120" r="35" fill="#2A9D8F"/>
+  <ellipse cx="200" cy="220" rx="50" ry="70" fill="#2A9D8F"/>
+
+  <!-- Phone in hand -->
+  <rect x="260" y="150" width="80" height="140" rx="10" fill="#1A1D24"/>
+  <rect x="265" y="160" width="70" height="110" rx="5" fill="#FFFFFF"/>
+
+  <!-- App UI on phone -->
+  <rect x="270" y="165" width="60" height="15" rx="3" fill="#2A9D8F"/>
+  <rect x="270" y="185" width="40" height="8" rx="2" fill="#E5E2DC"/>
+  <rect x="270" y="198" width="50" height="8" rx="2" fill="#E5E2DC"/>
+  <rect x="270" y="211" width="35" height="8" rx="2" fill="#E5E2DC"/>
+  <circle cx="300" cy="245" r="15" fill="#2A9D8F"/>
+  <path d="M295 245L299 249L306 240" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Patient figure (smaller, in background) -->
+  <circle cx="350" cy="250" r="25" fill="#5a5d63" opacity="0.6"/>
+  <ellipse cx="350" cy="320" rx="35" ry="50" fill="#5a5d63" opacity="0.6"/>
+
+  <!-- Voice waves -->
+  <path d="M180 100 Q170 95 180 90" stroke="#2A9D8F" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M175 105 Q160 95 175 85" stroke="#2A9D8F" stroke-width="2" fill="none" opacity="0.3"/>
+
+  <!-- Location pin -->
+  <circle cx="120" cy="300" r="20" fill="#2A9D8F" opacity="0.2"/>
+  <path d="M120 285 C110 285 105 293 105 300 C105 310 120 325 120 325 C120 325 135 310 135 300 C135 293 130 285 120 285Z" fill="#2A9D8F"/>
+  <circle cx="120" cy="298" r="5" fill="white"/>
+
+  <!-- Checkmark badge -->
+  <circle cx="380" cy="150" r="25" fill="#2A9D8F"/>
+  <path d="M370 150L377 157L392 142" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

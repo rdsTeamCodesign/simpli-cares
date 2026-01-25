@@ -1,0 +1,43 @@
+<svg width="200" height="350" viewBox="0 0 200 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Phone frame -->
+  <rect x="5" y="5" width="190" height="340" rx="25" fill="#1A1D24"/>
+  <rect x="12" y="18" width="176" height="314" rx="18" fill="#FFFFFF"/>
+
+  <!-- Header -->
+  <rect x="12" y="18" width="176" height="50" rx="18" fill="#2A9D8F"/>
+  <text x="50" y="48" font-family="system-ui" font-size="14" font-weight="bold" fill="white">Care Tasks</text>
+
+  <!-- Progress bar -->
+  <rect x="25" y="80" width="150" height="8" rx="4" fill="#E5E2DC"/>
+  <rect x="25" y="80" width="100" height="8" rx="4" fill="#2A9D8F"/>
+  <text x="25" y="102" font-family="system-ui" font-size="10" fill="#5a5d63">4 of 6 completed</text>
+
+  <!-- Task items -->
+  <!-- Task 1 - completed -->
+  <rect x="25" y="115" width="150" height="35" rx="8" fill="#E8F4F1"/>
+  <circle cx="45" cy="132" r="10" fill="#2A9D8F"/>
+  <path d="M41 132L44 135L50 129" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <text x="62" y="137" font-family="system-ui" font-size="11" fill="#1A1D24">Medication reminder</text>
+
+  <!-- Task 2 - completed -->
+  <rect x="25" y="158" width="150" height="35" rx="8" fill="#E8F4F1"/>
+  <circle cx="45" cy="175" r="10" fill="#2A9D8F"/>
+  <path d="M41 175L44 178L50 172" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <text x="62" y="180" font-family="system-ui" font-size="11" fill="#1A1D24">Vitals check</text>
+
+  <!-- Task 3 - completed -->
+  <rect x="25" y="201" width="150" height="35" rx="8" fill="#E8F4F1"/>
+  <circle cx="45" cy="218" r="10" fill="#2A9D8F"/>
+  <path d="M41 218L44 221L50 215" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <text x="62" y="223" font-family="system-ui" font-size="11" fill="#1A1D24">Mobility assistance</text>
+
+  <!-- Task 4 - in progress -->
+  <rect x="25" y="244" width="150" height="35" rx="8" fill="#FFFFFF" stroke="#2A9D8F" stroke-width="2"/>
+  <circle cx="45" cy="261" r="10" fill="#FFFFFF" stroke="#2A9D8F" stroke-width="2"/>
+  <text x="62" y="266" font-family="system-ui" font-size="11" font-weight="bold" fill="#1A1D24">Personal care</text>
+
+  <!-- Task 5 - pending -->
+  <rect x="25" y="287" width="150" height="35" rx="8" fill="#F8F9FA"/>
+  <circle cx="45" cy="304" r="10" fill="#E5E2DC"/>
+  <text x="62" y="309" font-family="system-ui" font-size="11" fill="#5a5d63">Documentation</text>
+</svg>

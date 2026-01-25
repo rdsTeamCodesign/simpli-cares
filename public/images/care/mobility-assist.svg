@@ -1,0 +1,33 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="200" rx="12" fill="#E8F4F1"/>
+
+  <!-- Walker/cane -->
+  <rect x="180" y="80" width="8" height="90" rx="2" fill="#5a5d63"/>
+  <rect x="210" y="80" width="8" height="90" rx="2" fill="#5a5d63"/>
+  <rect x="175" y="75" width="50" height="10" rx="3" fill="#5a5d63"/>
+  <circle cx="184" cy="175" r="6" fill="#1A1D24"/>
+  <circle cx="214" cy="175" r="6" fill="#1A1D24"/>
+
+  <!-- Senior with caregiver support -->
+  <circle cx="120" cy="70" r="28" fill="#E9C46A"/>
+  <ellipse cx="120" cy="140" rx="30" ry="50" fill="#264653"/>
+
+  <!-- Caregiver -->
+  <circle cx="70" cy="80" r="22" fill="#2A9D8F"/>
+  <ellipse cx="70" cy="135" rx="25" ry="40" fill="#2A9D8F"/>
+
+  <!-- Supporting arm -->
+  <ellipse cx="100" cy="110" rx="20" ry="8" fill="#2A9D8F" transform="rotate(30 100 110)"/>
+
+  <!-- Path/ground -->
+  <path d="M40 180 Q150 170 260 180" stroke="#ccd4da" stroke-width="3" stroke-dasharray="10,5" fill="none"/>
+
+  <!-- Footsteps -->
+  <ellipse cx="100" cy="178" rx="8" ry="4" fill="#ccd4da"/>
+  <ellipse cx="130" cy="175" rx="8" ry="4" fill="#ccd4da"/>
+  <ellipse cx="160" cy="178" rx="8" ry="4" fill="#ccd4da"/>
+
+  <!-- Arrow showing movement -->
+  <path d="M230 100 L260 100 L255 95 M260 100 L255 105" stroke="#2A9D8F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

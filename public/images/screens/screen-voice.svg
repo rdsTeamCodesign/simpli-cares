@@ -1,0 +1,31 @@
+<svg width="200" height="350" viewBox="0 0 200 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Phone frame -->
+  <rect x="5" y="5" width="190" height="340" rx="25" fill="#1A1D24"/>
+  <rect x="12" y="18" width="176" height="314" rx="18" fill="#FFFFFF"/>
+
+  <!-- Header -->
+  <rect x="12" y="18" width="176" height="50" rx="18" fill="#2A9D8F"/>
+  <text x="40" y="48" font-family="system-ui" font-size="14" font-weight="bold" fill="white">Voice Verify</text>
+
+  <!-- Microphone icon -->
+  <circle cx="100" cy="140" r="50" fill="#E8F4F1"/>
+  <rect x="90" y="110" width="20" height="40" rx="10" fill="#2A9D8F"/>
+  <path d="M75 135 L75 145 C75 160 85 170 100 170 C115 170 125 160 125 145 L125 135" stroke="#2A9D8F" stroke-width="3" fill="none"/>
+  <line x1="100" y1="170" x2="100" y2="185" stroke="#2A9D8F" stroke-width="3"/>
+  <line x1="85" y1="185" x2="115" y2="185" stroke="#2A9D8F" stroke-width="3"/>
+
+  <!-- Voice waves -->
+  <path d="M60 130 Q50 140 60 150" stroke="#2A9D8F" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M50 120 Q35 140 50 160" stroke="#2A9D8F" stroke-width="2" fill="none" opacity="0.3"/>
+  <path d="M140 130 Q150 140 140 150" stroke="#2A9D8F" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M150 120 Q165 140 150 160" stroke="#2A9D8F" stroke-width="2" fill="none" opacity="0.3"/>
+
+  <!-- Status text -->
+  <text x="55" y="220" font-family="system-ui" font-size="13" font-weight="bold" fill="#1A1D24">Say your name</text>
+  <text x="40" y="240" font-family="system-ui" font-size="11" fill="#5a5d63">Speak clearly into your phone</text>
+
+  <!-- Recording indicator -->
+  <circle cx="100" cy="280" r="25" fill="#2A9D8F" opacity="0.2"/>
+  <circle cx="100" cy="280" r="15" fill="#2A9D8F"/>
+  <rect x="95" y="275" width="10" height="10" rx="2" fill="white"/>
+</svg>

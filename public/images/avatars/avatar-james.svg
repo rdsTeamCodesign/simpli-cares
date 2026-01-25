@@ -1,0 +1,7 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="40" cy="40" r="40" fill="#E8F4F1"/>
+  <circle cx="40" cy="32" r="16" fill="#D4763A"/>
+  <ellipse cx="40" cy="70" rx="25" ry="20" fill="#1D5248"/>
+  <!-- Short hair -->
+  <ellipse cx="40" cy="24" rx="16" ry="10" fill="#1A1D24"/>
+</svg>
