@@ -67,7 +67,7 @@ export default function HomePage() {
           <div
             className={`flex flex-col items-center justify-between gap-8 lg:flex-row`}
           >
-            <div className="w-full md:max-w-lg text-center lg:text-left">
+            <div className="w-full md:max-w-lg lg:max-w-xl text-center lg:text-left">
               <span className={styles.heroEyebrow}>
                 EVV Platform for Home Care Agencies
               </span>
