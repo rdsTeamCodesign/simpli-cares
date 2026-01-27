@@ -114,7 +114,7 @@
 }
 
 .nav .btn {
-  padding: 0.75rem 1.5rem;
+  padding: 8px 16px;
   font-size: 0.9rem;
 }
 
@@ -124,6 +124,7 @@
   display: flex;
   align-items: center;
   padding-top: calc(var(--spacing-lg) + 60px);
+  padding-bottom: calc(var(--spacing-md) + 60px);
   background: linear-gradient(
     180deg,
     var(--color-bg) 0%,
@@ -538,7 +539,7 @@
 
 .howItWorksHeader {
   text-align: center;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
 }
 
 .howItWorksHeader h2 {
@@ -563,9 +564,14 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .stepsGrid {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .stepsGrid {
+    grid-template-columns: 2fr;
   }
 }
 

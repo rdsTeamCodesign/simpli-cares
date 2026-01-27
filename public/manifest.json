@@ -1,0 +1,16 @@
+{
+  "name": "SimpliCares - EVV Platform for Home Care Agencies",
+  "short_name": "SimpliCares",
+  "description": "The EVV platform that helps home care agencies stay compliant with electronic visit verification.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdfcfa",
+  "theme_color": "#2E7D6B",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

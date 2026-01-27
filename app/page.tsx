@@ -4,7 +4,9 @@
 import { useEffect } from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
-import Link from "next/link";
+import ContactForm from "./components/ContactForm";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function HomePage() {
   useEffect(() => {
@@ -57,30 +59,15 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Navigation */}
-      <nav className={styles.nav}>
-        <div className={styles.container}>
-          <Link href="/" className={styles.logo}>
-            <Image
-              src="/images/logo/logo-simplicares.svg"
-              alt="SimpliCares Logo"
-              width={150}
-              height={40}
-            />
-          </Link>
-          <a href="#cta" className={`${styles.btn} ${styles.btnPrimary}`}>
-            Get Started Free
-          </a>
-        </div>
-      </nav>
+      <Header ctaHref="#cta" />
 
       {/* Hero Section */}
       <section className={styles.hero}>
-        <div className={styles.container}>
+        <div className="default-container mx-auto! px-4 max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
           <div
-            className={`flex items-center justify-between ${styles.heroGrid}`}
+            className={`flex flex-col items-center justify-between gap-8 lg:flex-row`}
           >
-            <div className={styles.heroContent}>
+            <div className="w-full md:max-w-lg text-center lg:text-left">
               <span className={styles.heroEyebrow}>
                 EVV Platform for Home Care Agencies
               </span>
@@ -110,12 +97,12 @@ export default function HomePage() {
             </div>
 
             <div
-              className={`group overflow-hidden relative w-full md:w-[400px] h-[400px] md:h-[600px] rounded-lg ${styles.heroImage}`}
+              className={`group overflow-hidden relative w-full md:w-[400px] h-[400px] md:h-[600px] rounded-lg`}
             >
               <Image
                 src="/images/hero/heroImage.webp"
                 alt="Caregiver with senior patient"
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className="object-cover w-full! transition-transform duration-500 group-hover:scale-105"
                 priority
                 fill
               />
@@ -126,8 +113,8 @@ export default function HomePage() {
 
       {/* Story Section */}
       <section className={styles.story}>
-        <div className={styles.container}>
-          <div className="flex flex-col md:flex-row justify-between gap-8">
+        <div className="default-container mx-auto! px-4 max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
+          <div className="flex flex-col-reverse lg:flex-row justify-between gap-8">
             <div className="relative group w-full md:w-[400px] h-[350px] md:h-[600px] overflow-hidden rounded-lg flex-shrink-0">
               <Image
                 src={"/images/care/care-image.webp"}
@@ -159,7 +146,7 @@ export default function HomePage() {
                 </p>
               </div>
               <p className={`${styles.storyHighlight} ${styles.fadeIn}`}>
-                You didn't sign up for this.
+                You didn&apos;t sign up for this.
               </p>
             </div>
           </div>
@@ -168,11 +155,12 @@ export default function HomePage() {
 
       {/* Pivot Section */}
       <section className={styles.pivot}>
-        <div className={styles.container}>
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+        <div className="default-container mx-auto! px-4 max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
             <div className={`${styles.pivotContent} ${styles.fadeIn}`}>
               <h2>
-                Here&apos;s what we realized after working with dozens of agencies.
+                Here&apos;s what we realized after working with dozens of
+                agencies.
               </h2>
               <p>
                 Most EVV platforms try to do everything. Scheduling. Billing.
@@ -196,7 +184,7 @@ export default function HomePage() {
             </div>
 
             <div
-              className={`group overflow-hidden relative w-full md:w-[400px] h-[300px] md:h-[400px] rounded-lg shrink-0 ${styles.heroImage}`}
+              className={`group overflow-hidden relative w-full md:w-[400px] h-[300px] md:h-[400px] rounded-lg shrink-0`}
             >
               <Image
                 src="/images/care/Healthcare-home.webp"
@@ -212,7 +200,7 @@ export default function HomePage() {
 
       {/* Services Section */}
       {/* <section className={styles.solution} id="services">
-        <div className={styles.container}>
+        <div className="default-container mx-auto! px-4 max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
           <div className={`${styles.solutionHeader} ${styles.fadeIn}`}>
             <h2>Our Care Services</h2>
             <p>
@@ -353,7 +341,7 @@ export default function HomePage() {
 
       {/* How It Works Section */}
       <section className={styles.solution} id="solution">
-        <div className={styles.container}>
+        <div className="default-container mx-auto! px-4 max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
           <div className={`${styles.solutionHeader} ${styles.fadeIn}`}>
             <h2>EVV that does one thing. Perfectly.</h2>
             <p>
@@ -417,39 +405,45 @@ export default function HomePage() {
 
       {/* Who We Help Section */}
       <section className={styles.howItWorks}>
-        <div className={styles.container}>
-          <div className={`${styles.howItWorksHeader} ${styles.fadeIn}`}>
-            <h2>6 steps. That&apos;s it.</h2>
-          </div>
-          <div className={`${styles.stepsGrid} ${styles.fadeIn}`}>
-            {[
-              "Add your patients and caregivers",
-              "Define services and tasks",
-              "Schedule visits",
-              "Caregiver checks in (GPS verified)",
-              "Complete tasks, notes, signature, check out",
-              "Data transmits automatically to your state aggregator",
-            ].map((text, index) => (
-              <div key={index} className={styles.stepItem}>
-                <span className={styles.stepNumber}>{index + 1}</span>
-                <span className={styles.stepText}>{text}</span>
+        <div className="default-container mx-auto! px-4 max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
+          <div className="flex flex-col gap-6">
+            <div className={`${styles.howItWorksHeader} ${styles.fadeIn}`}>
+              <h2>6 steps. That&apos;s it.</h2>
+            </div>
+
+            <div className={`${styles.stepsGrid} ${styles.fadeIn}`}>
+              {[
+                "Add your patients and caregivers",
+                "Define services and tasks",
+                "Schedule visits",
+                "Caregiver checks in (GPS verified)",
+                "Complete tasks, notes, signature, check out",
+                "Data transmits automatically to your state aggregator",
+              ].map((text, index) => (
+                <div key={index} className={styles.stepItem}>
+                  <span className={styles.stepNumber}>{index + 1}</span>
+                  <span className={styles.stepText}>{text}</span>
+                </div>
+              ))}
+            </div>
+
+            <div>
+              <p className={`${styles.howItWorksTagline} ${styles.fadeIn}`}>
+                No learning curve. No IT team needed. No headaches.
+              </p>
+              <div className={`${styles.howItWorksCta} ${styles.fadeIn}`}>
+                <a href="#cta" className={`${styles.btn} ${styles.btnPrimary}`}>
+                  Book Free Strategy Call
+                </a>
               </div>
-            ))}
-          </div>
-          <p className={`${styles.howItWorksTagline} ${styles.fadeIn}`}>
-            No learning curve. No IT team needed. No headaches.
-          </p>
-          <div className={`${styles.howItWorksCta} ${styles.fadeIn}`}>
-            <a href="#cta" className={`${styles.btn} ${styles.btnPrimary}`}>
-              Book Free Strategy Call
-            </a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Who It's For Section */}
       <section className={styles.whoItsFor}>
-        <div className={styles.container}>
+        <div className="default-container mx-auto! px-4 max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
           <div className={`${styles.whoItsForHeader} ${styles.fadeIn}`}>
             <h2>
               Built for agencies that want simplicity, not software overwhelm.
@@ -500,11 +494,11 @@ export default function HomePage() {
 
       {/* Testimonials Section */}
       <section className={styles.testimonials}>
-        <div className={styles.container}>
+        <div className="default-container mx-auto! px-4 max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
           <div className={`${styles.testimonialsHeader} ${styles.fadeIn}`}>
             <h2>
               They were where you are. <br />
-              Here's what changed.
+              Here&apos;s what changed.
             </h2>
           </div>
 
@@ -555,70 +549,29 @@ export default function HomePage() {
 
       {/* Final CTA Section */}
       <section className={styles.finalCta} id="cta">
-        <div className={styles.container}>
-          <h2 className={styles.fadeIn}>Still not sure? Let's talk.</h2>
-          <p className={`${styles.finalCtaText} ${styles.fadeIn}`}>
-            No pressure. No 47-slide sales deck. Just a conversation about your
-            agency, your challenges, and whether we're the right fit. If we're
-            not, we'll tell you. If we are, we'll show you exactly how it works.
-          </p>
-          <div className={`${styles.ctaButtons} ${styles.fadeIn}`}>
-            <Link
-              href="/contact"
-              className={`${styles.btn} ${styles.btnInverse}`}
+        <div className="default-container mx-auto! px-4 max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
+          <div className="flex flex-col items-center gap-6">
+            <div className="flex-1">
+              <h2 className={styles.fadeIn}>
+                Still not sure? Let&apos;s talk.
+              </h2>
+              <p className={`${styles.finalCtaText} ${styles.fadeIn}`}>
+                No pressure. No 47-slide sales deck. Just a conversation about
+                your agency, your challenges, and whether we&apos;re the right
+                fit. If we&apos;re not, we&apos;ll tell you. If we are,
+                we&apos;ll show you exactly how it works.
+              </p>
+            </div>
+            <div
+              className={`${styles.fadeIn} max-w-125 w-full bg-white p-6! rounded-lg shadow-lg text-left`}
             >
-              Book your Free Strategy Call
-            </Link>
+              <ContactForm showTitle={false} />
+            </div>
           </div>
-          {/* <div className={`${styles.trustBadges} ${styles.fadeIn}`}>
-            <span>✓ Licensed & Insured</span>
-            <span>✓ Background Checked</span>
-            <span>⭐ 4.9 Family Rating</span>
-          </div> */}
         </div>
       </section>
 
-      {/* Footer CTA */}
-      <section className={styles.footerCta}>
-        <div className={styles.container}>
-          <div className={`${styles.footerCtaLines} ${styles.fadeIn}`}>
-            <p>Your caregivers deserve a simpler workflow.</p>
-            <p>Your admin deserves peace of mind.</p>
-            <p>Your agency deserves clean compliance.</p>
-          </div>
-          <Link
-            href="/contact"
-            className={`${styles.btn} ${styles.btnInverse} ${styles.fadeIn}`}
-          >
-            Let&apos;s Make It Happen
-          </Link>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className={styles.footer}>
-        <div className={styles.container}>
-          <div className={styles.footerContent}>
-            <div className={styles.footerLogo}>
-              <Image
-                src="/images/logo/logo-simplicares-white.svg"
-                alt="SimpliCares Logo"
-                width={150}
-                height={40}
-              />
-            </div>
-            <div className={styles.footerLinks}>
-              <Link href="#solution">Features</Link>
-              <Link href="#solution">Compliance</Link>
-              <Link href="/contact">Contact</Link>
-              <Link href="/privacy-policy">Privacy Policy</Link>
-            </div>
-            <p className={styles.footerCopy}>
-              © 2026 SimpliCares. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer ctaHref="#cta" />
     </>
   );
 }

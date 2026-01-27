@@ -1,28 +1,13 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import styles from "../page.module.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function PrivacyPolicyPage() {
   return (
     <>
-      {/* Navigation */}
-      <nav className={styles.nav}>
-        <div className={styles.container}>
-          <Link href="/" className={styles.logo}>
-            <Image
-              src="/images/logo/logo-simplicares.svg"
-              alt="SimpliCares Logo"
-              width={150}
-              height={40}
-            />
-          </Link>
-          <Link href="/#cta" className={`${styles.btn} ${styles.btnPrimary}`}>
-            Get Started Free
-          </Link>
-        </div>
-      </nav>
+      <Header ctaHref="/#cta" />
 
       {/* Privacy Policy Hero */}
       <section className={styles.hero} style={{ minHeight: "auto", paddingBottom: "var(--spacing-lg)" }}>
@@ -316,30 +301,7 @@ export default function PrivacyPolicyPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className={styles.footer}>
-        <div className={styles.container}>
-          <div className={styles.footerContent}>
-            <div className={styles.footerLogo}>
-              <Image
-                src="/images/logo/logo-simplicares-white.svg"
-                alt="SimpliCares Logo"
-                width={150}
-                height={40}
-              />
-            </div>
-            <div className={styles.footerLinks}>
-              <Link href="/#solution">Features</Link>
-              <Link href="/#solution">Compliance</Link>
-              <Link href="/contact">Contact</Link>
-              <Link href="/privacy-policy">Privacy Policy</Link>
-            </div>
-            <p className={styles.footerCopy}>
-              © 2026 SimpliCares. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer showCta={false} />
     </>
   );
 }
