@@ -140,7 +140,7 @@ export default function ContactPage() {
                       Address
                     </h3>
                     <p style={{ color: "var(--color-text-light)", margin: 0 }}>
-                      Surat, Gujarat, India
+                      Dubai, UAE
                     </p>
                   </div>
                 </div>
