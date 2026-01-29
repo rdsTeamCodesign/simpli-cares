@@ -538,24 +538,14 @@ export default function TermsConditionsPage() {
               <p style={{ color: "var(--color-text-light)", lineHeight: 1.8, margin: 0 }}>
                 <strong>SimpliCares Inc.</strong>
                 <br />
-                123 Healthcare Drive, Suite 400
-                <br />
-                Austin, TX 78701
+                Dubai, UAE
                 <br />
                 Email:{" "}
                 <a
-                  href="mailto:legal@simplicares.com"
+                  href="mailto:support@simplicares.com"
                   style={{ color: "var(--color-accent)" }}
                 >
-                  legal@simplicares.com
-                </a>
-                <br />
-                Phone:{" "}
-                <a
-                  href="tel:+1-800-555-0123"
-                  style={{ color: "var(--color-accent)" }}
-                >
-                  1-800-555-0123
+                  support@simplicares.com
                 </a>
               </p>
             </div>

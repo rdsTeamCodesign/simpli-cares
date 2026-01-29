@@ -290,10 +290,8 @@ export default function PrivacyPolicyPage() {
               </p>
               <p style={{ color: "var(--color-text-light)", lineHeight: 1.8, margin: 0 }}>
                 <strong>SimpliCares Inc.</strong><br />
-                123 Healthcare Drive, Suite 400<br />
-                Austin, TX 78701<br />
-                Email: <a href="mailto:privacy@simplicares.com" style={{ color: "var(--color-accent)" }}>privacy@simplicares.com</a><br />
-                Phone: <a href="tel:+1-800-555-0123" style={{ color: "var(--color-accent)" }}>1-800-555-0123</a>
+                Dubai, UAE<br />
+                Email: <a href="mailto:support@simplicares.com" style={{ color: "var(--color-accent)" }}>support@simplicares.com</a>
               </p>
             </div>
 

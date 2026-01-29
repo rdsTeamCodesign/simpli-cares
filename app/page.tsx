@@ -479,12 +479,16 @@ export default function HomePage() {
               <h3>✗ This is NOT for you if</h3>
               <ul className={styles.qualificationList}>
                 <li>
-                  <span className={styles.icon}>✗</span> You want an all-in-one
-                  platform that does scheduling, billing, HR, and makes coffee
+                  <span className={styles.icon}>✗</span> You don’t care about
+                  caregiver experience
                 </li>
                 <li>
-                  <span className={styles.icon}>✗</span> You like complexity for
-                  the sake of it
+                  <span className={styles.icon}>✗</span> You want a bloated
+                  system with features you’ll never use
+                </li>
+                <li>
+                  <span className={styles.icon}>✗</span> You want everything
+                  crammed into one confusing platform
                 </li>
               </ul>
             </div>
