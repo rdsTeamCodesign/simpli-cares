@@ -118,7 +118,7 @@ export default function RootLayout({
                 };
 
                 fbq('trackCustom', 'Button_Click_with_Name', {
-                  button_name: data.text,
+                  button_name: data.href || data.text || 'unknown',
                 });
               });
             }
