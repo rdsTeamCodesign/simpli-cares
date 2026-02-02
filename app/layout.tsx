@@ -76,12 +76,8 @@ export const metadata: Metadata = {
     images: ["/images/og-image.png"],
   },
   icons: {
-    icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
-    ],
-    apple: [
-      { url: "/apple-icon.svg", type: "image/svg+xml" },
-    ],
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    apple: [{ url: "/apple-icon.svg", type: "image/svg+xml" }],
   },
   manifest: "/manifest.json",
   category: "Healthcare Technology",
@@ -107,6 +103,28 @@ export default function RootLayout({
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '1611839156667799');
             fbq('track', 'PageView');
+
+            function trackButtonsAndLinks() {
+              document.addEventListener("click", function (event) {
+                const el = event.target.closest("button, a");
+                if (!el) return;
+
+                const data = {
+                  tag: el.tagName.toLowerCase(),
+                  text: el.innerText.trim(),
+                  href: el.tagName === "A" ? el.href : null,
+                  id: el.id || null,
+                  classes: el.className || null,
+                };
+
+                fbq('trackCustom', 'Button_Click_with_Name', {
+                  button_name: data.text,
+                });
+              });
+            }
+
+            trackButtonsAndLinks();
+
           `}
         </Script>
         <noscript>
